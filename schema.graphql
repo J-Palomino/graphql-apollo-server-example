@@ -1,0 +1,19 @@
+type Query {
+  """
+  dummy value required for schema merging
+  """
+  _: String
+  books: [Book]
+}
+
+type Mutation {
+  """
+  dummy value required for schema merging
+  """
+  _: String
+}
+
+type Book {
+  title: String
+  author: String
+}

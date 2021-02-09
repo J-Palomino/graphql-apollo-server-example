@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "rootDir": "./src",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@server": ["src/server"],
+      "@gqlgen": ["src/generated/graphql.ts"]
+    }
+  },
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
