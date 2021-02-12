@@ -5,7 +5,7 @@ import fs from "fs";
 import assert from "assert";
 import { printSchema } from "graphql";
 
-import schema from "../schema";
+import schema from "../../schema";
 
 try {
   assert.strictEqual(
