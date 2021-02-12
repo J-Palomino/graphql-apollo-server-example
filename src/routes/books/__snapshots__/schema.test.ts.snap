@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Books Query returns expected results 1`] = `
+Array [
+  Object {
+    "author": "Kate Chopin",
+    "title": "The Awakening",
+  },
+  Object {
+    "author": "Paul Auster",
+    "title": "City of Glass",
+  },
+]
+`;
