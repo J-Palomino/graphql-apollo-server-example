@@ -1,6 +1,7 @@
+import { QueryResolvers } from "@gqlgen";
 import { books } from "./data";
 
-const Query: Resolvers = {
+const Query: QueryResolvers = {
   books: () => books,
 };
 
