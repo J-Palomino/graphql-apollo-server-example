@@ -5,9 +5,11 @@
     "node": ">=12"
   },
   "scripts": {
-    "dev": "tsc-watch --onSuccess 'node ./dist/index.js'",
+    "start": "node dist/index.js",
+    "dev": "rm -rf ./dist/* && yarn gql-gen && tsc-watch --onSuccess 'node ./dist/index.js'",
+    "build": "yarn gql-gen && tsc --build",
     "test": "jest",
-    "gql-gen": "graphql-codegen --config codegen.yml",
+    "gqlgen": "yarn schema && graphql-codegen --config codegen.yml",
     "schema": "ts-node --require tsconfig-paths/register src/utils/schema/exporter.ts",
     "schema:check": "yarn ts-node --require tsconfig-paths/register src/utils/schema/checker.ts",
     "prettier": "prettier --write ."
