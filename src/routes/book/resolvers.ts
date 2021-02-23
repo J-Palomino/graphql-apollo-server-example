@@ -1,8 +1,7 @@
-import { QueryResolvers } from "@gqlgen";
-import { books } from "./data";
+import { QueryResolvers } from "@types";
 
 const Query: QueryResolvers = {
-  books: () => books,
+  books: (parent, args, context) => context.models.books.getBooks(),
 };
 
 const Mutation = {};
